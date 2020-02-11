@@ -85,11 +85,11 @@ export default class Hosts {
         return host
     }
 
-    public addAppToHost(id: string, app: Data.BasicApplication) {
+    public addAppToHost(id: string, app: Data.BasicApplication): void {
         this.hosts[id].applications.push(app)
     }
 
-    public removeAppToHost(id: string, appName: string) {
+    public removeAppToHost(id: string, appName: string): void {
         const index = this.hosts[id].applications.findIndex((app) => app.name === appName)
         this.hosts[id].applications.splice(index, 1)
     }
