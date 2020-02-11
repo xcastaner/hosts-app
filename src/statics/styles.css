@@ -1,0 +1,75 @@
+body {
+  background-color: #f7f5f5;
+  margin: 0;
+  padding: 0;
+  font-family: "HelveticaNeue";
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.title {
+  color: #000;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 2rem;
+  line-height: 1.2rem;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #000;
+  font-family: "HelveticaNeue-CondensedBold";
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: 23px;
+}
+
+.box {
+  background-color: #fff;
+  padding: 30px;
+  width: 375px;
+  box-sizing: border-box;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+
+.listView > .box {
+  width: 100%;
+}
+
+.listView > .box > .approw {
+  justify-content: left;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.approw {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+  cursor: pointer;
+}
+
+.apdex {
+  margin-right: 30px;
+  justify-content: right;
+}
+
+.mainContainer {
+  width: 840px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
