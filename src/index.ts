@@ -1,5 +1,8 @@
 import Hosts from './services/hosts'
 import { Host } from './components/Host'
+import { initPolyfills } from './utils/polyfilll'
+
+initPolyfills()
 
 window.onload = () => {
   const hosts = new Hosts()
@@ -16,7 +19,7 @@ window.onload = () => {
   })
 
   keys.map((host) => {
-    const hostComponent = new Host(objHosts[host])
+    const hostComponent = new Host(hosts.getTopAppsByHost(host))
     hostComponent.render()
   })
 }

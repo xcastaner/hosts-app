@@ -18,7 +18,7 @@ export class Host extends Component {
             this.element.addEventListener('click', this.options.click)
         }
 
-        (this.content as Data.Host).applications.map((app: any) => {
+        (this.content as Data.Host).applications.slice(0, 5).map((app: any) => {
             const appName = new AppName(app, {
                 click: () => alert(`V${app.version}`)
             }, this.element)
